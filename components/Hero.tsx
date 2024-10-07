@@ -29,7 +29,7 @@ const Hero = () => {
             {/* Wrapper div to align text and rotating words side by side */}
             <div className="text-left ml-3 md:mb-10 text-[30px] sm:mb-10 sm:text-4xl md:text-5xl lg:text-6xl flex items-center">
               <WordRotate
-                className="font-bold text-blue-700 dark:text-blue-700 inline-block align-middle"
+                className="font-bold text-custom-blue dark:text-custom-blue inline-block align-middle"
                 words={[
                   "IT Solutions",
                   "Cloud Services",

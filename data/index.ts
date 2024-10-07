@@ -273,16 +273,19 @@ export const services = [
 export const jobListings = [
   {
     title: "Software Engineer",
-    description: "Join our team and work on cutting-edge projects that shape the future of technology."
+    description:
+      "Join our team and work on cutting-edge projects that shape the future of technology.",
   },
   {
     title: "Cloud Architect",
-    description: "Design and implement scalable cloud solutions for our clients."
+    description:
+      "Design and implement scalable cloud solutions for our clients.",
   },
   {
     title: "UI/UX Designer",
-    description: "Create intuitive and beautiful user interfaces for our products."
-  }
+    description:
+      "Create intuitive and beautiful user interfaces for our products.",
+  },
 ];
 
 

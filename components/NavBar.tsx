@@ -5,6 +5,13 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
+import { Squada_One } from "next/font/google";
+
+
+const squadaOne = Squada_One({
+  weight: "400", // Since Squada One supports only 400
+  subsets: ["latin"],
+});
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,9 +52,19 @@ const Navbar: React.FC = () => {
             className="w-auto h-[50px]"
             whileHover={{ scale: 1.1 }}
           />
-          <div className="flex items-center">
-            <span className="font-bold text-xl">SANGEETA</span>
-            <span className="text-md ml-2">Systems</span>
+          {/* <div 
+          className="flex items-center">
+            <span className="font-bold text-xl">S<span className="text-blue-400">ANGEETA</span></span><span className="text-primary"></span>
+            <span className="text-md text-bold ml-2 ">Systems</span>
+          </div> */}
+          <div className={`flex items-center ${squadaOne.className}`}>
+            <span className="  text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl">
+              S
+              <span className="text-custom-blue"  >
+                ANGEETA
+              </span>
+            </span>
+            <span className="text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl ml-1 sm:ml-2">Systems</span>
           </div>
         </Link>
 

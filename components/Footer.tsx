@@ -3,6 +3,12 @@ import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { FaLinkedin, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { Squada_One } from "next/font/google";
+
+const squadaOne = Squada_One({
+  weight: "400", // Since Squada One supports only 400
+  subsets: ["latin"],
+});
 
 function Footer() {
   const [email, setEmail] = useState('');
@@ -51,9 +57,31 @@ function Footer() {
             transition={{ duration: 0.5 }}
             className="text-center sm:text-left"
           >
-            <h3 className="text-xl sm:text-2xl font-bold mb-4">
+             <Link
+          href="/"
+          title="sangeeta-systems"
+          className="relative flex items-center space-x-2 mb-4"
+        >
+          <motion.img
+            src="/SANGEETA.png"
+            alt="SANGEETA Logo"
+            width={80}
+            height={80}
+            className="w-auto h-[50px]"
+            whileHover={{ scale: 1.1 }}
+          />
+            {/* <h3 className="text-xl sm:text-2xl font-bold mb-4">
               SANGEETA Systems
-            </h3>
+            </h3> */}
+            <div className={`  ${squadaOne.className}`}>
+              <span className="  text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl">
+                S<span className="text-custom-blue">ANGEETA</span>
+              </span>
+              <span className="text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl ml-1 sm:ml-2">
+                Systems
+              </span>
+            </div>
+            </Link>
             <motion.div
               initial={{ opacity: 1 }}
               whileHover={{ opacity: 1, scale: 1.05 }}

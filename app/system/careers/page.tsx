@@ -87,13 +87,13 @@ const CareersPage = () => {
           className="relative h-screen flex items-center justify-center text-white"
         >
           <Image
-            src="/careers2.png"
+            src="/careers/20.png"
             alt="Tech Workspace"
             layout="fill"
             objectFit="cover"
             quality={100}
           />
-          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="absolute inset-0 bg-black opacity-30"></div>
           <div className="z-10 text-center">
             <h1 className="text-5xl font-bold mb-4">
               Join Our Team of Innovators
