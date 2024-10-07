@@ -121,31 +121,73 @@ const CareersPage = () => {
             Open Positions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {jobListings.map((job, index) => (
-              <motion.div
-                key={index}
-                className="job-card bg-gray-200 rounded-lg shadow-md overflow-hidden"
-                whileHover={{
-                  scale: 1.03,
-                  boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
-                }}
-              >
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
-                  <p className="text-gray-600 mb-4">{job.description}</p>
-                  <Link href="/system/applyNow">
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition duration-300"
-                      // onClick={() => scrollToSection(benefitsRef)}
-                    >
-                      Apply Now
-                    </motion.button>
-                  </Link>
-                </div>
-              </motion.div>
-            ))}
+            {/* {jobListings.length > 0 ? (
+              jobListings.map((job, index) => (
+                <motion.div
+                  key={index}
+                  className="job-card bg-gray-200 rounded-lg shadow-md overflow-hidden"
+                  whileHover={{
+                    scale: 1.03,
+                    boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
+                  }}
+                >
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
+                    <p className="text-gray-600 mb-4">{job.description}</p>
+                    <Link href="/system/applyNow">
+                      <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition duration-300"
+                      >
+                        Apply Now
+                      </motion.button>
+                    </Link>
+                  </div>
+                </motion.div>
+              ))
+            ) : (
+              <div className="col-span-full text-center">
+                <p className="text-xl text-gray-600">No openings available at the moment. Please check back later.</p>
+              </div>
+            )} */}
+            {jobListings.length > 0 ? (
+              jobListings.map((job, index) => (
+                <motion.div
+                  key={index}
+                  className="job-card bg-gray-200 rounded-lg shadow-md overflow-hidden"
+                  whileHover={{
+                    scale: 1.03,
+                    boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
+                  }}
+                >
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold mb-2">
+                      {job?.title ?? "Position Title"}
+                    </h3>
+                    <p className="text-gray-600 mb-4">
+                      {job?.description ??
+                        "Position description is not available"}
+                    </p>
+                    <Link href="/system/applyNow">
+                      <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition duration-300"
+                      >
+                        Apply Now
+                      </motion.button>
+                    </Link>
+                  </div>
+                </motion.div>
+              ))
+            ) : (
+              <div className="col-span-full text-center">
+                <p className="text-xl text-gray-600">
+                  No openings available at the moment. Please check back later.
+                </p>
+              </div>
+            )}
           </div>
         </section>
 

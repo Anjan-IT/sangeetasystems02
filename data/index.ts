@@ -269,24 +269,31 @@ export const services = [
 
 // careers page (job listings)
 
+type Job = {
+  title?: string;
+  description?: string;
+};
 
-export const jobListings = [
-  {
-    title: "Software Engineer",
-    description:
-      "Join our team and work on cutting-edge projects that shape the future of technology.",
-  },
-  {
-    title: "Cloud Architect",
-    description:
-      "Design and implement scalable cloud solutions for our clients.",
-  },
-  {
-    title: "UI/UX Designer",
-    description:
-      "Create intuitive and beautiful user interfaces for our products.",
-  },
-];
+// export const jobListings: Job[] = [
+//   {
+//     title: "Software Engineer",
+//     description:
+//       "Join our team and work on cutting-edge projects that shape the future of technology.",
+//   },
+//   {
+//     title: "Cloud Architect",
+//     description:
+//       "Design and implement scalable cloud solutions for our clients.",
+//   },
+//   {
+//     title: "UI/UX Designer",
+//     description:
+//       "Create intuitive and beautiful user interfaces for our products.",
+//   },
+// ];
+
+
+export const jobListings: Job[] = [];
 
 
 // careers page (benefits)
