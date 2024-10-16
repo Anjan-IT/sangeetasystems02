@@ -57,7 +57,7 @@ function Footer() {
             transition={{ duration: 0.5 }}
             className="text-center sm:text-left"
           >
-            <Link
+            {/* <Link
               href="/"
               title="sangeeta-systems"
               className="relative flex items-center space-x-2 mb-4"
@@ -70,9 +70,6 @@ function Footer() {
                 className="w-auto h-[50px]"
                 whileHover={{ scale: 1.1 }}
               />
-              {/* <h3 className="text-xl sm:text-2xl font-bold mb-4">
-              SANGEETA Systems
-            </h3> */}
               <div className={`  ${squadaOne.className}`}>
                 <span className="  text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl">
                   S<span className="text-custom-blue">ANGEETA</span>
@@ -81,22 +78,29 @@ function Footer() {
                   Systems
                 </span>
               </div>
-            </Link>
+            </Link> */}
             <motion.div
               initial={{ opacity: 1 }}
               whileHover={{ opacity: 1, scale: 1.05 }}
               transition={{ duration: 0.3 }}
               className="text-sm sm:text-base"
             >
-              <p>PT.1579 V R COLONY GOPAL, SERILINGAMPALLY</p>
-              <p className="mb-2">HYDERABAD, TELANGANA-500085.</p>
-              <p>10.00 AM – 7.00 PM</p>
+              {/* <div className="border-t-2 w-full mb-4 "> </div> */}
+              <p>
+                <span className="font-bold ">Registered Office</span> :
+                Plot No.1579 V R Colony, Gopal, Serilingampally, Hyderabad,
+                Telangana-500085.
+              </p>
+              <div className="border-t-2 w-full mt-4 mb-4 "> </div>
+              <p>
+                <span className="font-bold ">Branch Office</span> :
+                Plot no 185, Flat 402, Ragannaguda, Sagar Highway Rd. Hyderabad,
+                Rangareddy, Telangana- 501510
+              </p>
+              <p className="mb-2 mt-1">10.00 AM – 7.00 PM</p>
             </motion.div>
             <div className="border-t-2 w-full mt-4 mb-4 "> </div>
-            <Link
-              href="/system/privacyPolicy"
-              className="text-sm sm:text-base"
-            >
+            <Link href="/system/privacyPolicy" className="text-sm sm:text-base">
               Privacy Policy
             </Link>
           </motion.div>
@@ -114,7 +118,6 @@ function Footer() {
                 { name: "Careers", href: "/system/careers" },
                 { name: "Case Studies", href: "/system/caseStudies" },
                 { name: "Contact", href: "/system/contact" },
-                
               ].map((link, index) => (
                 <motion.li key={index}>
                   <Link href={link.href} passHref>
