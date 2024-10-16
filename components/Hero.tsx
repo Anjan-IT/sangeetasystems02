@@ -27,6 +27,7 @@ const Hero = () => {
             <p className="uppercase tracking-widest text-xs text-left text-black-100 max-w-80"></p>
 
             {/* Wrapper div to align text and rotating words side by side */}
+            {/* hello */}
             <div className="text-left ml-3 md:mb-10 text-[30px] sm:mb-10 sm:text-4xl md:text-5xl lg:text-6xl flex items-center">
               <WordRotate
                 className="font-bold text-custom-blue dark:text-custom-blue inline-block align-middle"
