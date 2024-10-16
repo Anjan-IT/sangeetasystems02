@@ -37,7 +37,7 @@ const BlogPage = () => {
       }}
     >
       <Navbar />
-      <main className="flex-grow container mt-16  mx-auto px-4 py-8">
+      <main className="flex-grow container mt-16 py-20   mx-auto px-4 ">
         <h1 className="text-4xl font-bold mb-8 text-center">
           Our Case Studies
         </h1>

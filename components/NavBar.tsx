@@ -37,19 +37,19 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="bg-background/[0.2] backdrop-blur dark:bg-black-200 fixed inset-x-0 top-0 z-[5000] text-black shadow-md">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 max-w-8xl flex justify-between items-center">
         {/* Brand Logo */}
         <Link
           href="/"
           title="sangeeta-systems"
-          className="relative flex items-center space-x-2"
+          className="relative flex items-center space-x-2 lg:pl-12"
         >
           <motion.img
-            src="/SANGEETA.png"
+            src="/logo/sstranslogo.png"
             alt="SANGEETA Logo"
-            width={80}
-            height={80}
-            className="w-auto h-[50px]"
+            width={180}
+            height={180}
+            className="w-auto h-[100px]"
             whileHover={{ scale: 1.1 }}
           />
           {/* <div 
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
             <span className="font-bold text-xl">S<span className="text-blue-400">ANGEETA</span></span><span className="text-primary"></span>
             <span className="text-md text-bold ml-2 ">Systems</span>
           </div> */}
-          <div className={`flex items-center ${squadaOne.className}`}>
+          {/* <div className={`flex items-center ${squadaOne.className}`}>
             <span className="  text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl">
               S
               <span className="text-custom-blue"  >
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
               </span>
             </span>
             <span className="text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl ml-1 sm:ml-2">Systems</span>
-          </div>
+          </div> */}
         </Link>
 
         {/* Navigation for larger screens */}
@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
           {navItems.map((item, index) => (
             <Link key={index} href={item.href}>
               <motion.span
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-md font-medium hover:text-primary transition-colors"
                 whileHover={{ scale: 1.1 }}
               >
                 {item.label}
