@@ -314,6 +314,53 @@ export const benefits = [
 ];
 
 // privacy policy page (privacy policy)
+// export const privacyPolicySections = [
+//   {
+//     title: "Introduction",
+//     content:
+//       "www.sangeetasystems.com website is owned by SANGEETA SYSTEMS, which is a data controller of your personal data. We have adopted this Privacy Policy to explain how we process information collected by www.sangeetasystems.com, and the reasons for collecting certain personal data about you. Please read this Privacy Policy before using the www.sangeetasystems.com website.",
+//   },
+//   {
+//     title: "Introduction",
+//     content:
+//       "www.sangeetasystems.com website is owned by SANGEETA SYSTEMS, which is a data controller of your personal data. We have adopted this Privacy Policy to explain how we process information collected by www.sangeetasystems.com, and the reasons for collecting certain personal data about you. Please read this Privacy Policy before using the www.sangeetasystems.com website.",
+//   },
+//   {
+//     title: "Personal Information We Collect",
+//     content:
+//       "When you visit www.sangeetasystems.com, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the installed cookies on your device. Additionally, as you browse the Site, we collect information about the individual web pages or products you view, referring websites or search terms, and how you interact with the Site. We refer to this automatically-collected information as 'Device Information.' We might also collect personal data you provide to us (including but not limited to Name, Surname, Address, payment information, etc.) during registration to fulfill the agreement.",
+//   },
+//   {
+//     title: "Why We Process Your Data",
+//     content:
+//       "Our top priority is customer data security. We process only minimal user data, as much as it is absolutely necessary to maintain the website. Information collected automatically is used only to identify potential cases of abuse and establish statistical information regarding website usage. This statistical information is not aggregated in such a way that it would identify any particular user of the system.",
+//   },
+//   {
+//     title: "Your Rights",
+//     content:
+//       "If you are a European resident, you have rights related to your personal data, including the right to be informed, access, rectification, erasure, restrict processing, data portability, object, and rights in relation to automated decision-making and profiling. To exercise these rights, please contact us through the contact information provided below.",
+//   },
+//   {
+//     title: "Links to Other Websites",
+//     content:
+//       "Our website may contain links to other websites that are not owned or controlled by us. We are not responsible for such other websites or third parties' privacy practices. We encourage you to be aware when you leave our website and read the privacy statements of each website that may collect personal information.",
+//   },
+//   {
+//     title: "Information Security",
+//     content:
+//       "We secure information you provide on computer servers in a controlled, secure environment, protected from unauthorized access, use, or disclosure. We keep reasonable administrative, technical, and physical safeguards to protect against unauthorized access, use, modification, and personal data disclosure in its control and custody. However, no data transmission over the Internet or wireless network can be guaranteed.",
+//   },
+//   {
+//     title: "Legal Disclosure",
+//     content:
+//       "We will disclose any information we collect, use or receive if required or permitted by law, such as to comply with a subpoena or similar legal process, and when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request.",
+//   },
+//   {
+//     title: "Contact Information",
+//     content:
+//       "If you would like to contact us to understand more about this Policy or wish to contact us concerning any matter relating to individual rights and your Personal Information, you may send an email to info@sangeetasystems.com.",
+//   },
+// ];
 export const privacyPolicySections = [
   {
     title: "Introduction",
@@ -323,36 +370,32 @@ export const privacyPolicySections = [
   {
     title: "Personal Information We Collect",
     content:
-      "When you visit www.sangeetasystems.com, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the installed cookies on your device. Additionally, as you browse the Site, we collect information about the individual web pages or products you view, referring websites or search terms, and how you interact with the Site. We refer to this automatically-collected information as 'Device Information.' We might also collect personal data you provide to us (including but not limited to Name, Surname, Address, payment information, etc.) during registration to fulfill the agreement.",
+      "When you visit www.sangeetasystems.com, we automatically collect certain information about your device, including your web browser, IP address, time zone, and cookies installed on your device. Additionally, we collect information about the web pages you view, search terms, and how you interact with the Site. We also collect personal data you provide (e.g., Name, Address, payment details) during registration.",
   },
   {
     title: "Why We Process Your Data",
     content:
-      "Our top priority is customer data security. We process only minimal user data, as much as it is absolutely necessary to maintain the website. Information collected automatically is used only to identify potential cases of abuse and establish statistical information regarding website usage. This statistical information is not aggregated in such a way that it would identify any particular user of the system.",
+      "Our top priority is the security of customer data. We process only minimal user data necessary to maintain the website. Automatically collected information is used only to identify potential cases of abuse and to gather statistical information regarding website usage. This data is not aggregated in such a way that identifies any specific user.",
   },
   {
     title: "Your Rights",
     content:
-      "If you are a European resident, you have rights related to your personal data, including the right to be informed, access, rectification, erasure, restrict processing, data portability, object, and rights in relation to automated decision-making and profiling. To exercise these rights, please contact us through the contact information provided below.",
+      "If you are a European resident, you have the right to access, correct, update, or delete your personal data. You can also object to data processing and exercise other rights under data protection laws. To exercise these rights, contact us at info@sangeetasystems.com.",
   },
   {
     title: "Links to Other Websites",
     content:
-      "Our website may contain links to other websites that are not owned or controlled by us. We are not responsible for such other websites or third parties' privacy practices. We encourage you to be aware when you leave our website and read the privacy statements of each website that may collect personal information.",
+      "Our website may contain links to external websites not operated by us. We are not responsible for their privacy practices and encourage you to review their privacy policies.",
   },
   {
     title: "Information Security",
     content:
-      "We secure information you provide on computer servers in a controlled, secure environment, protected from unauthorized access, use, or disclosure. We keep reasonable administrative, technical, and physical safeguards to protect against unauthorized access, use, modification, and personal data disclosure in its control and custody. However, no data transmission over the Internet or wireless network can be guaranteed.",
+      "We take appropriate measures to secure the personal information you provide. However, no method of transmission over the Internet or electronic storage is completely secure, and we cannot guarantee its absolute security.",
   },
   {
     title: "Legal Disclosure",
     content:
-      "We will disclose any information we collect, use or receive if required or permitted by law, such as to comply with a subpoena or similar legal process, and when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request.",
+      "We will disclose your personal information if required by law or in good faith to protect our rights, your safety, the safety of others, or to comply with legal processes.",
   },
-  {
-    title: "Contact Information",
-    content:
-      "If you would like to contact us to understand more about this Policy or wish to contact us concerning any matter relating to individual rights and your Personal Information, you may send an email to info@sangeetasystems.com.",
-  },
+  
 ];

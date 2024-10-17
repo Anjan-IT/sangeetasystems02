@@ -66,7 +66,7 @@ const Contact = () => {
         }}
       >
         <Navbar />
-        <div className="container mx-auto px-4 py-24 ">
+        <div className="container max-w-full  mx-auto px-4 py-24 mt-4">
           <div className="grid lg:grid-cols-2 gap-8 items-center bg-gray-200 rounded-3xl shadow-lg overflow-hidden">
             <div className="p-8">
               <h2 className="text-3xl font-extrabold text-gray-800 mb-6">
@@ -111,7 +111,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   className="w-full p-3 border-b bg-gray-100 border-gray-200 focus:border-blue-600 outline-none transition"
-                  rows={4}
+                  rows={3}
                 ></textarea>
                 <button
                   type="submit"
@@ -164,7 +164,16 @@ const Contact = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4469.567174296591!2d78.37460757516702!3d17.480100483423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9225f4c390ed%3A0x7e50d1eeaac0597!2sGokul%20Enclave%2C%20Venkata%20Ramana%20Colony%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana%20500085!5e1!3m2!1sen!2sin!4v1726739956488!5m2!1sen!2sin"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+              ></iframe> 
+               {/* <iframe
+                className="w-full h-full border-0"
+                src="https://www.google.com/maps/d/embed?mid=1Wk0fAu_9CqZSoXk9o7HNusfzuDC5m9E&ehbc=2E312F"
               ></iframe>
+              <iframe
+                className="w-full h-full border-0"
+                src="https://www.google.com/maps/d/u/0/embed?mid=1Wk0fAu_9CqZSoXk9o7HNusfzuDC5m9E&ehbc=2E312F&noprof=1"
+                loading="lazy"
+              ></iframe> */}
             </div>
           </div>
         </div>

@@ -25,11 +25,39 @@ const PrivacyPolicy = () => {
         <h1 className="text-3xl font-bold text-center mb-8">Privacy Policy</h1>
         <div className="bg-white p-8 rounded-lg">
           {privacyPolicySections.map((section, index) => (
-            <div key={index} className="mb-8">
-              <h2 className="text-xl font-semibold mb-3">{section.title}</h2>
-              <p className="text-gray-700 leading-relaxed">{section.content}</p>
-            </div>
+            <>
+              <div key={index} className="mb-8">
+                <h2 className="text-xl font-semibold mb-3">{section.title}</h2>
+                <p className="text-gray-700 leading-relaxed">
+                  {section.content}
+                </p>
+                {/* <p className="text-gray-700 leading-relaxed">{section.content2}</p> */}
+              </div>
+            </>
           ))}
+          <div className="mb-4">
+            <h2 className="text-xl font-semibold mb-3">Contact Information</h2>
+            <p className="text-gray-700 leading-relaxed">
+              If you have questions about this Privacy Policy or wish to
+              exercise your rights, please contact us at <span className="font-semibold"> info@sangeetasystems.com.</span>
+              
+            </p>
+          </div>
+          <div className="mb-4">
+            <p className="text-gray-700 leading-relaxed">
+              <span className="font-semibold"> Registered Office spam : </span>{" "}
+              Plot No.1579 V R Colony, Gopal, Serilingampally, Hyderabad,
+              Telangana-500085.
+            </p>
+          </div>
+          <div className="mb-4">
+            <p className="text-gray-700 leading-relaxed">
+              <span className="font-semibold">Branch Office : </span> Plot no
+              185, Flat 402, Ragannaguda, Sagar Highway Rd. Hyderabad,
+              Rangareddy, Telangana- 501510
+            </p>
+          </div>
+          
         </div>
       </motion.main>
       <Footer />

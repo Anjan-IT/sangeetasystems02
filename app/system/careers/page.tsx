@@ -99,8 +99,8 @@ const CareersPage = () => {
               Join Our Team of Innovators
             </h1>
             <p className="text-xl mb-8">
-              At TechSolutions, we're looking for bright, driven individuals who
-              are passionate about pushing the boundaries of technology.
+              At Sangeeta Systems, we're looking for bright, driven individuals
+              who are passionate about pushing the boundaries of technology.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -183,8 +183,12 @@ const CareersPage = () => {
               ))
             ) : (
               <div className="col-span-full text-center">
-                <p className="text-xl text-gray-600">
+                {/* <p className="text-xl text-gray-600">
                   No openings available at the moment. Please check back later.
+                </p> */}
+                <p className="text-xl text-gray-800">
+                  Submit your resume to our HR at hr@sangeetasystems.com and
+                  take the first step towards joining our dynamic team
                 </p>
               </div>
             )}
