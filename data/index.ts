@@ -313,6 +313,7 @@ export const benefits = [
   }
 ];
 
+
 // privacy policy page (privacy policy)
 // export const privacyPolicySections = [
 //   {

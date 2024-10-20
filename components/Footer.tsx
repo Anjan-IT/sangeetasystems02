@@ -57,28 +57,7 @@ function Footer() {
             transition={{ duration: 0.5 }}
             className="text-center sm:text-left"
           >
-            {/* <Link
-              href="/"
-              title="sangeeta-systems"
-              className="relative flex items-center space-x-2 mb-4"
-            >
-              <motion.img
-                src="/SANGEETA.png"
-                alt="SANGEETA Logo"
-                width={80}
-                height={80}
-                className="w-auto h-[50px]"
-                whileHover={{ scale: 1.1 }}
-              />
-              <div className={`  ${squadaOne.className}`}>
-                <span className="  text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl">
-                  S<span className="text-custom-blue">ANGEETA</span>
-                </span>
-                <span className="text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl ml-1 sm:ml-2">
-                  Systems
-                </span>
-              </div>
-            </Link> */}
+            
             <motion.div
               initial={{ opacity: 1 }}
               whileHover={{ opacity: 1, scale: 1.05 }}
@@ -87,20 +66,20 @@ function Footer() {
             >
               {/* <div className="border-t-2 w-full mb-4 "> </div> */}
               <p>
-                <span className="font-bold ">Registered Office</span> :
-                Plot No.1579 V R Colony, Gopal, Serilingampally, Hyderabad,
+                <span className="font-bold ">Registered Office</span> : Plot
+                No.1579 V R Colony, Gopal, Serilingampally, Hyderabad,
                 Telangana-500085.
               </p>
               <div className="border-t-2 w-full mt-4 mb-4 "> </div>
               <p>
-                <span className="font-bold ">Branch Office</span> :
-                Plot no 185, Flat 402, Ragannaguda, Sagar Highway Rd. Hyderabad,
-                Rangareddy, Telangana- 501510
+                <span className="font-bold ">Branch Office</span> : Plot no 185,
+                Flat 402, Ragannaguda, Sagar Highway Rd. Hyderabad, Rangareddy,
+                Telangana- 501510
               </p>
               <p className="mb-2 mt-1">10.00 AM – 7.00 PM</p>
             </motion.div>
             <div className="border-t-2 w-full mt-4 mb-4 "> </div>
-            <Link href="/system/privacyPolicy" className="text-sm sm:text-base">
+            <Link href="/privacy-policy" className="text-sm sm:text-base">
               Privacy Policy
             </Link>
           </motion.div>
