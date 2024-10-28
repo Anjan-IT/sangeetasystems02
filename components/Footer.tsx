@@ -13,36 +13,45 @@ const squadaOne = Squada_One({
 function Footer() {
   const [email, setEmail] = useState('');
   const [subscriptionStatus, setSubscriptionStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   // change the phone number to the phone number you want to send the call to 
   const handleCall = () => {
     window.location.href = 'tel:+917396691030';
   };
 
-  // change the email to the email you want to send the subscription to 
+  // Handle newsletter subscription using Web3Forms
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) {
-      setSubscriptionStatus("info@sangeetasystems.com");
-      return;
-    }
+    setIsSubmitting(true);
+
     try {
-      const response = await fetch('/api/subscribe', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_PASSCODE,
+          email: email,
+          subject: 'New Newsletter Subscription',
+          from_name: 'Newsletter Subscription',
+        }),
       });
-      if (response.ok) {
-        setSubscriptionStatus('Thank you for subscribing!');
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubscriptionStatus('Thank you for subscribing! 🎉');
         setEmail('');
       } else {
-        setSubscriptionStatus('An error occurred. Please try again.');
+        setSubscriptionStatus('Something went wrong. Please try again later.');
       }
     } catch (error) {
       console.error('Subscription error:', error);
-      setSubscriptionStatus('An error occurred. Please try again.');
+      setSubscriptionStatus('Failed to subscribe. Please try again.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -203,22 +212,36 @@ function Footer() {
               <input
                 type="email"
                 placeholder="Your email"
-                className="p-2 w-full text-black mb-2 sm:mb-0 sm:mr-2"
+                className="p-2 w-full text-black mb-2 sm:mb-0 sm:mr-2 rounded"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                disabled={isSubmitting}
               />
               <motion.button
                 type="submit"
-                className="bg-blue-500 text-white p-2 w-full sm:w-auto"
-                whileHover={{ scale: 1.05, backgroundColor: "#3182ce" }}
-                whileTap={{ scale: 0.95 }}
+                className={`bg-blue-500 text-white p-2 w-full sm:w-auto rounded ${
+                  isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-600'
+                }`}
+                whileHover={!isSubmitting ? { scale: 1.05 } : {}}
+                whileTap={!isSubmitting ? { scale: 0.95 } : {}}
+                disabled={isSubmitting}
               >
-                Subscribe
+                {isSubmitting ? 'Subscribing...' : 'Subscribe'}
               </motion.button>
             </form>
             {subscriptionStatus && (
-              <p className="mt-2 text-sm">{subscriptionStatus}</p>
+              <motion.p
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className={`mt-2 text-sm ${
+                  subscriptionStatus.includes('error') || subscriptionStatus.includes('Failed')
+                    ? 'text-red-400'
+                    : 'text-green-400'
+                }`}
+              >
+                {subscriptionStatus}
+              </motion.p>
             )}
           </div>
         </div>
