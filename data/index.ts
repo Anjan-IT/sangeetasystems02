@@ -171,8 +171,8 @@ export const testimonialAbout = [
   {
     quote:
       "Sangeeta Systems has transformed our IT infrastructure. Their innovative solutions have significantly improved our operational efficiency.",
-    name: "John Doe",
-    title: "CTO, Tech Innovators Inc.",
+    name: "Rajanikanth A",
+    title: "CTO, Oasis",
   },
   {
     quote:
