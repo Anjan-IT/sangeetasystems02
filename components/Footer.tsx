@@ -80,11 +80,11 @@ function Footer() {
                 Telangana-500085.
               </p>
               <div className="border-t-2 w-full mt-4 mb-4 "> </div>
-              <p>
+              {/* <p>
                 <span className="font-bold ">Branch Office</span> : Plot no 185,
                 Flat 402, Ragannaguda, Sagar Highway Rd. Hyderabad, Rangareddy,
                 Telangana- 501510
-              </p>
+              </p> */}
               <p className="mb-2 mt-1">10.00 AM – 7.00 PM</p>
             </motion.div>
             <div className="border-t-2 w-full mt-4 mb-4 "> </div>
