@@ -171,20 +171,20 @@ export const testimonialAbout = [
   {
     quote:
       "Sangeeta Systems has transformed our IT infrastructure. Their innovative solutions have significantly improved our operational efficiency.",
-    name: "John Doe",
-    title: "CTO, Tech Innovators Inc.",
+    name: "Rajanikanth A",
+    title: "CTO, Oasis.",
   },
   {
     quote:
       "The team's expertise in cloud services is unparalleled. They've helped us seamlessly migrate to a more robust and scalable system.",
-    name: "Jane Smith",
-    title: "CEO, CloudFirst Solutions",
+    name: "Vignesh Seenivasan",
+    title: "South-Head, InstaVC.",
   },
   {
     quote:
       "Their security solutions have given us peace of mind. We feel confident knowing our data is protected by the best in the business.",
-    name: "Mike Johnson",
-    title: "CISO, SecureNet Corp",
+    name: "Rakesh Kanugula",
+    title: "Head Application, Oliva.",
   },
 ];
 
