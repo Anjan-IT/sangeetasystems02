@@ -66,7 +66,6 @@ function Footer() {
             transition={{ duration: 0.5 }}
             className="text-center sm:text-left"
           >
-            
             <motion.div
               initial={{ opacity: 1 }}
               whileHover={{ opacity: 1, scale: 1.05 }}
@@ -90,6 +89,10 @@ function Footer() {
             <div className="border-t-2 w-full mt-4 mb-4 "> </div>
             <Link href="/privacy-policy" className="text-sm sm:text-base">
               Privacy Policy
+            </Link>
+            <div className=" mt-2 mb-2 "> </div>
+            <Link href="/terms&conditions" className="text-sm sm:text-base">
+              Terms and Conditions
             </Link>
           </motion.div>
 
@@ -221,13 +224,15 @@ function Footer() {
               <motion.button
                 type="submit"
                 className={`bg-blue-500 text-white p-2 w-full sm:w-auto rounded ${
-                  isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-600'
+                  isSubmitting
+                    ? "opacity-50 cursor-not-allowed"
+                    : "hover:bg-blue-600"
                 }`}
                 whileHover={!isSubmitting ? { scale: 1.05 } : {}}
                 whileTap={!isSubmitting ? { scale: 0.95 } : {}}
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Subscribing...' : 'Subscribe'}
+                {isSubmitting ? "Subscribing..." : "Subscribe"}
               </motion.button>
             </form>
             {subscriptionStatus && (
@@ -235,9 +240,10 @@ function Footer() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 className={`mt-2 text-sm ${
-                  subscriptionStatus.includes('error') || subscriptionStatus.includes('Failed')
-                    ? 'text-red-400'
-                    : 'text-green-400'
+                  subscriptionStatus.includes("error") ||
+                  subscriptionStatus.includes("Failed")
+                    ? "text-red-400"
+                    : "text-green-400"
                 }`}
               >
                 {subscriptionStatus}

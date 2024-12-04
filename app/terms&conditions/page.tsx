@@ -4,9 +4,9 @@ import React from "react";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import { privacyPolicySections } from "@/data";
+import { tCsections } from "@/data";
 
-const PrivacyPolicy = () => {
+const TermsAndConditions = () => {
   const fadeIn = {
     initial: { opacity: 0 },
     animate: { opacity: 1 },
@@ -22,9 +22,9 @@ const PrivacyPolicy = () => {
         className="container mx-auto px-4 mt-16 py-20 max-w-5xl"
         {...fadeIn}
       >
-        <h1 className="text-3xl font-bold text-center mb-8">Privacy Policy</h1>
+        <h1 className="text-3xl font-bold text-center mb-8">Terms and Conditions</h1>
         <div className="bg-white p-8 rounded-lg">
-          {privacyPolicySections.map((section, index) => (
+          {tCsections.map((section, index) => (
             <div key={index} className="mb-8">
               <h2 className="text-xl font-semibold mb-3">{section.title}</h2>
               <p className="text-gray-700 leading-relaxed">
@@ -36,9 +36,8 @@ const PrivacyPolicy = () => {
           <div className="mb-4">
             <h2 className="text-xl font-semibold mb-3">Contact Information</h2>
             <p className="text-gray-700 leading-relaxed">
-              If you have questions about this Privacy Policy or wish to exercise your rights, please contact us at{" "}
-              <span className="font-semibold">info@sangeetasystems.com</span> or call us at{" "}
-              <span className="font-semibold">+91 7396691030</span>
+              If you have questions about these Terms and Conditions, please contact us at{" "}
+              <span className="font-semibold">info@sangeetasystems.com</span>
             </p>
           </div>
 
@@ -49,14 +48,6 @@ const PrivacyPolicy = () => {
               Telangana-500085.
             </p>
           </div>
-
-          {/* <div className="mb-4">
-            <p className="text-gray-700 leading-relaxed">
-              <span className="font-semibold">Branch Office: </span>
-              Plot no 185, Flat 402, Ragannaguda, Sagar Highway Rd. Hyderabad,
-              Rangareddy, Telangana- 501510
-            </p>
-          </div> */}
         </div>
       </motion.main>
       <Footer />
@@ -64,4 +55,6 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default TermsAndConditions;
+
+

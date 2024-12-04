@@ -362,41 +362,154 @@ export const benefits = [
 //       "If you would like to contact us to understand more about this Policy or wish to contact us concerning any matter relating to individual rights and your Personal Information, you may send an email to info@sangeetasystems.com.",
 //   },
 // ];
+// export const privacyPolicySections = [
+//   {
+//     title: "Introduction",
+//     content:
+//       "www.sangeetasystems.com website is owned by SANGEETA SYSTEMS, which is a data controller of your personal data. We have adopted this Privacy Policy to explain how we process information collected by www.sangeetasystems.com, and the reasons for collecting certain personal data about you. Please read this Privacy Policy before using the www.sangeetasystems.com website.",
+//   },
+//   {
+//     title: "Personal Information We Collect",
+//     content:
+//       "When you visit www.sangeetasystems.com, we automatically collect certain information about your device, including your web browser, IP address, time zone, and cookies installed on your device. Additionally, we collect information about the web pages you view, search terms, and how you interact with the Site. We also collect personal data you provide (e.g., Name, Address, payment details) during registration.",
+//   },
+//   {
+//     title: "Why We Process Your Data",
+//     content:
+//       "Our top priority is the security of customer data. We process only minimal user data necessary to maintain the website. Automatically collected information is used only to identify potential cases of abuse and to gather statistical information regarding website usage. This data is not aggregated in such a way that identifies any specific user.",
+//   },
+//   {
+//     title: "Your Rights",
+//     content:
+//       "If you are a European resident, you have the right to access, correct, update, or delete your personal data. You can also object to data processing and exercise other rights under data protection laws. To exercise these rights, contact us at info@sangeetasystems.com.",
+//   },
+//   {
+//     title: "Links to Other Websites",
+//     content:
+//       "Our website may contain links to external websites not operated by us. We are not responsible for their privacy practices and encourage you to review their privacy policies.",
+//   },
+//   {
+//     title: "Information Security",
+//     content:
+//       "We take appropriate measures to secure the personal information you provide. However, no method of transmission over the Internet or electronic storage is completely secure, and we cannot guarantee its absolute security.",
+//   },
+//   {
+//     title: "Legal Disclosure",
+//     content:
+//       "We will disclose your personal information if required by law or in good faith to protect our rights, your safety, the safety of others, or to comply with legal processes.",
+//   },
+  
+// ];
+
+
 export const privacyPolicySections = [
   {
-    title: "Introduction",
+    title: "1. Introduction",
     content:
-      "www.sangeetasystems.com website is owned by SANGEETA SYSTEMS, which is a data controller of your personal data. We have adopted this Privacy Policy to explain how we process information collected by www.sangeetasystems.com, and the reasons for collecting certain personal data about you. Please read this Privacy Policy before using the www.sangeetasystems.com website.",
+      "At Sangeeta Systems, we value your privacy and are committed to protecting your personal data. This Privacy Policy outlines how we collect, use, and safeguard your information when you visit our website or use our services.",
   },
   {
-    title: "Personal Information We Collect",
+    title: "2. Information We Collect",
     content:
-      "When you visit www.sangeetasystems.com, we automatically collect certain information about your device, including your web browser, IP address, time zone, and cookies installed on your device. Additionally, we collect information about the web pages you view, search terms, and how you interact with the Site. We also collect personal data you provide (e.g., Name, Address, payment details) during registration.",
+      "We collect personal information such as your name, email address, phone number, and company details when you contact us, sign up for our services, or request information. We also collect usage data on how you interact with our website, including IP addresses, browser types, and pages visited.",
   },
   {
-    title: "Why We Process Your Data",
+    title: "3. How We Use Your Information",
     content:
-      "Our top priority is the security of customer data. We process only minimal user data necessary to maintain the website. Automatically collected information is used only to identify potential cases of abuse and to gather statistical information regarding website usage. This data is not aggregated in such a way that identifies any specific user.",
+      "We use your information to provide, maintain, and improve our services, communicate with you regarding updates, promotions, and service offerings, personalize your experience on our website, and comply with legal obligations.",
   },
   {
-    title: "Your Rights",
+    title: "4. Data Security",
     content:
-      "If you are a European resident, you have the right to access, correct, update, or delete your personal data. You can also object to data processing and exercise other rights under data protection laws. To exercise these rights, contact us at info@sangeetasystems.com.",
+      "We implement industry-standard security measures to protect your personal data from unauthorized access, disclosure, alteration, or destruction. However, please note that no method of transmission over the internet or electronic storage is 100% secure.",
   },
   {
-    title: "Links to Other Websites",
+    title: "5. Sharing Your Information",
     content:
-      "Our website may contain links to external websites not operated by us. We are not responsible for their privacy practices and encourage you to review their privacy policies.",
+      "We do not sell, rent, or share your personal information with third parties except for service providers who assist us in operating our website or delivering services, and legal authorities if required by law.",
   },
   {
-    title: "Information Security",
+    title: "6. Cookies",
     content:
-      "We take appropriate measures to secure the personal information you provide. However, no method of transmission over the Internet or electronic storage is completely secure, and we cannot guarantee its absolute security.",
+      "Our website uses cookies to improve your experience. Cookies are small files stored on your device that help us analyze website traffic and personalize content. You can choose to disable cookies through your browser settings.",
   },
   {
-    title: "Legal Disclosure",
+    title: "7. Your Rights",
     content:
-      "We will disclose your personal information if required by law or in good faith to protect our rights, your safety, the safety of others, or to comply with legal processes.",
+      "You have the right to access, update, or delete your personal information, object to the processing of your data in certain circumstances, and withdraw consent for data processing at any time.",
   },
-  
+  {
+    title: "8. Third-Party Links",
+    content:
+      "Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these external sites.",
+  },
+  {
+    title: "9. Children's Privacy",
+    content:
+      "Our services are not directed to children under the age of 13. We do not knowingly collect personal data from children. If you believe we have inadvertently collected such information, please contact us, and we will delete it.",
+  },
+  {
+    title: "10. Changes to This Privacy Policy",
+    content:
+      "We may update this Privacy Policy from time to time. When we do, we will post the updated policy on our website and update the Effective Date at the top of the page.",
+  },
+];
+
+
+export const tCsections = [
+  {
+    title: "1. Introduction",
+    content:
+      "Welcome to Sangeeta Systems (www.sangeetasystems.com). By accessing or using our website and services, you agree to be bound by these Terms and Conditions. Please read them carefully.",
+  },
+  {
+    title: "2. Services Provided",
+    content:
+      "Sangeeta Systems offers a variety of IT solutions, including but not limited to software development, IT consulting, network services, and system integration. The details of these services are specified on our website.",
+  },
+  {
+    title: "3. Use of Website",
+    content:
+      "You agree to use this website for lawful purposes only. You may not use the website to transmit harmful or illegal content, including viruses or malware. You must not engage in any activity that disrupts the functionality of the website or its services.",
+  },
+  {
+    title: "4. Intellectual Property",
+    content:
+      "All content, including logos, images, software, text, and other materials provided on this website, is the property of Sangeeta Systems and is protected by copyright laws. You may not reproduce, distribute, or modify any content from the website without prior written consent.",
+  },
+  {
+    title: "5. Account Registration",
+    content:
+      "Some services may require you to create an account. You agree to provide accurate and complete information during registration and to update it as necessary. You are responsible for maintaining the confidentiality of your account and password.",
+  },
+  {
+    title: "6. Payment and Billing",
+    content:
+      "Charges for services provided by Sangeeta Systems will be outlined in the agreement or on the website. You agree to pay any applicable fees for services rendered by us as per the terms specified.",
+  },
+  {
+    title: "7. Limitation of Liability",
+    content:
+      "Sangeeta Systems is not liable for any damages or losses, including but not limited to direct, indirect, incidental, or consequential damages, arising from the use or inability to use our website or services.",
+  },
+  {
+    title: "8. Third-Party Links",
+    content:
+      "Our website may contain links to third-party websites. We do not endorse or take responsibility for the content or practices of these external sites.",
+  },
+  {
+    title: "9. Privacy",
+    content:
+      "Your use of our website is also governed by our Privacy Policy, which outlines how we collect, use, and protect your personal data.",
+  },
+  {
+    title: "10. Changes to Terms",
+    content:
+      "Sangeeta Systems reserves the right to modify these Terms and Conditions at any time. Any changes will be posted on this page with an updated date.",
+  },
+  {
+    title: "11. Governing Law",
+    content:
+      "These Terms and Conditions are governed by the laws. Any disputes will be resolved in the courts of Telangana-500085.",
+  },
 ];
