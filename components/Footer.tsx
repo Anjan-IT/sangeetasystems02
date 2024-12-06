@@ -74,9 +74,9 @@ function Footer() {
             >
               {/* <div className="border-t-2 w-full mb-4 "> </div> */}
               <p>
-                <span className="font-bold ">Registered Office</span> : Plot
-                No.1579 V R Colony, Gopal, Serilingampally, Hyderabad,
-                Telangana-500085.
+                <span className="font-bold ">Registered Office</span> : SANGEETA
+                SYSTEMS LLP, Plot No.1579 V R Colony, Gopal, Serilingampally,
+                Hyderabad, Telangana-500085.
               </p>
               <div className="border-t-2 w-full mt-4 mb-4 "> </div>
               {/* <p>

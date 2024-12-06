@@ -33,6 +33,16 @@ const PrivacyPolicy = () => {
             </div>
           ))}
           
+          <div className="mb-16 mt-16">
+            <h2 className="text-xl font-semibold mb-3">Refund Policy</h2>
+            <p className="text-gray-700 leading-relaxed">
+              We currently do not offer refunds. Please review our policy carefully before making a purchase.
+            </p>
+          </div>
+          
+
+         
+          
           <div className="mb-4">
             <h2 className="text-xl font-semibold mb-3">Contact Information</h2>
             <p className="text-gray-700 leading-relaxed">

@@ -453,6 +453,7 @@ export const privacyPolicySections = [
     content:
       "We may update this Privacy Policy from time to time. When we do, we will post the updated policy on our website and update the Effective Date at the top of the page.",
   },
+  
 ];
 
 
