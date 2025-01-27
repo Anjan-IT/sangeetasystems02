@@ -12,8 +12,6 @@ import { motion } from "framer-motion";
 import { services, servicesData } from "@/data";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-         
-
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -146,7 +144,7 @@ const ServicesPage = () => {
         {/* Hero Section */}
         <section
           ref={heroRef}
-          className="relative h-screen flex items-center justify-center"
+          className="relative h-[70vh] flex items-center justify-center"
         >
           <video
             autoPlay
@@ -157,7 +155,7 @@ const ServicesPage = () => {
             <source src="/servicesBG.mp4" type="video/mp4" />
           </video>
 
-          <div className="relative z-10 text-center px-4 flex flex-col items-center justify-center h-screen">
+          <div className="relative z-10 text-center px-4 flex flex-col items-center justify-center h-full">
             <HyperText
               className="animate-hero text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold mb-4 max-w-[90vw] sm:max-w-[80vw] md:max-w-[70vw] lg:max-w-[60vw]"
               text="IT Solutions for Tomorrow"
@@ -181,28 +179,32 @@ const ServicesPage = () => {
             backgroundColor: "#FEDCCE",
           }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-start mb-12">
             Our Services
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-14">
             {servicesData.map((service: any, index: any) => (
-              <div
-                key={index}
-                className="service-card p-6 rounded-lg shadow-lg"
-                style={{
-                  backgroundColor: "#CDC2C4",
-                }}
-              >
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-black">{service.description}</p>
+              <div key={index} className="flex flex-col items-start">
+                <div className="w-full h-[250px] sm:h-[250px] mb-6 overflow-hidden rounded-xl">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-start">
+                  {service.title}
+                </h3>
+                <p className="text-black text-start text-sm max-w-[90%]">
+                  {service.description}
+                </p>
               </div>
             ))}
           </div>
         </section>
 
-        <div
+        {/* <div
           ref={servicesRef}
           className="min-h-screen"
           style={{
@@ -239,7 +241,9 @@ const ServicesPage = () => {
               </motion.div>
             </section>
           ))}
-        </div>
+        </div> */}
+
+        {/* <Gallery /> */}
 
         {/* Footer Section */}
         <Footer />
